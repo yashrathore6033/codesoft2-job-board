@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search </title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <header>
+           <div class="top-btn">
+               <div class="lists">
+                   <ul>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-linkedin"></i></li>
+                        <li><i class="fa fa-wifi"></i></li>
+                        <li><i class="fab fa-google-plus"></i></li>
+                        <li><button class="register">REGISTER</button></li>
+                        <li><button class="login">LOG IN</button></li>
+                    </ul>
+               </div>
+           </div>
+           <div class="navigation">
+               <div class="left-head">
+                   <h2>JobBoard</h2>
+               </div>
+               <div class="right-nav">
+                   <nav>
+                       <ul>
+                           <li><a href="./index.html">HOME</a></li>
+                           <li><a href="#">JOB&nbsp;SEARCH</a></li>
+                           <li><a href="#">POST&nbsp;A&nbsp;JOB</a></li>
+                           <li><a href="#">POST&nbsp;A&nbsp;RESUME</a></li>
+                           <li><a href="#">PRICING</a></li>
+                           <li><a href="#">SHORTCODE</a></li>
+                       </ul>
+                   </nav>
+               </div>
+           </div><br>
+           <div class="banner-content">
+               <div class="left-img-content">
+                   <div class="left-para-content">
+                        <h3>Easiest Way To Find Your Dream Job</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout.The point of using</p>
+                        <button class="find-job">FIND A JOB</button>
+                   </div>
+               </div>
+               <div class="right-img-content">
+                    <div class="right-para-content">
+                        <h3>Hire Skilled People, best of them</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout. The point of using</p>    
+                       <button class="post-job">POST A JOB</button>
+                    </div>  
+               </div>
+           </div>
+       </header>
+       <section class="find-job-section">
+           <h3>Find a Job</h3>
+           <form action="#" class="form-one" onsubmit="validation()" method="GET">
+               <div class="form-align">
+                    <div class="search-location-section">
+                        <div class="search-section">
+                            <label for="search">Search</label><br>
+                            <input type="text" id="search" class="search-job" placeholder="Keywords (IT Engineer, Shop Manager, Hr Manager...)">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="location-section">
+                            <label for="location">Location</label><br>
+                            <input type="text" class="location-job" id="location" placeholder="New York, Hong Kong, New Delhi, Berlin, etc.">
+                            <i class="fa fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <div class="experince-section">
+                        <label for="experience">Experience(-/+)</label>
+                        <input type="range" id="experience" value="0">
+                    </div>
+                    <div class="salary-section">
+                        <label for="salary">Salary (S)/per Year</label>
+                        <input type="range" id="salary" value="0">
+                    </div>
+                    <div class="search-btn-section">
+                        <button type="submit" class="search-btn">SEARCH</button>
+                    </div>
+               </div>
+           </form>
+       </section>
+       <section class="post-job-section">
+           <h1>Job Posting Section</h1>
+           <p>The Job Posting section allows you to display the latest vacancies available <br> on the homepage of your website.</p>
+           <div class="posting-contents">
+               <h2 class="top-jobs">Top Job Postings</h2>
+               <div class="job-contents">
+                    <div class="job job-one">
+                        <div class="img-job">
+                            <img src="./images/img7.jpg" alt="img7">
+                        </div>
+                        <div class="job-details">
+                            <img src="./images/img11.png" alt="img">
+                            <h2>C Developer (Senior) C.Net</h2>
+                            <h5><i class="fas fa-lock"></i> Codewing Solutions</h5>
+                            <h4><span class="doll">&#36;</span> $15 - $500per hourly</h4>
+                            <h3><i class="fa fa-map-marker-alt"></i>Manhatttan, US</h3>
+                            <button>HEALTH CARE</button>
+                        </div>
+                    </div>
+                    <div class="job job-two">
+                        <div class="img-job">
+                            <img src="./images/img10.jpg" alt="img10">
+                        </div>
+                        <div class="job-details">
+                            <img src="./images/img11.png" alt="img">
+                            <h2>Web Designer/Developer</h2>
+                            <h5><i class="fas fa-lock"></i> Codewing Solutions</h5>
+                            <h4><span class="doll">&#36;</span> $15 - $500per hourly</h4>
+                            <h3><i class="fa fa-map-marker-alt"></i>Fresno, California</h3>
+                            <button>IT SERVICES</button>
+                        </div>
+                    </div>
+                    <div class="job job-three">
+                        <div class="img-job">
+                            <img src="./images/img9.jpg" alt="img9">
+                        </div>
+                        <div class="job-details">
+                            <h2>Administrative Assistant</h2>
+                            <h5>CA University</h5>
+                            <h4><span class="doll">&#36;</span> $20 - $500per hourly</h4>
+                            <h3><i class="fa fa-map-marker-alt"></i>Kathmandu, Nepal</h3>
+                            <button>CONSTRUCTION FACILITIES</button>
+                        </div>
+                    </div>
+                    <div class="job job-four">
+                        <div class="img-job">
+                            <img src="./images/img8.jpg" alt="img8">
+                        </div>
+                        <div class="job-details">
+                            <h2>House Manager And Personal Assistant</h2>
+                            <h5><i class="fas fa-lock"></i> CA University</h5>
+                            <h4><span class="doll">&#36;</span> $15 - $400per hourly</h4>
+                            <h3><i class="fa fa-map-marker-alt"></i>San Carlos, CA</h3>
+                            <button>ACCOUNTING FINANCE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-btn-align">
+                    <button class="load-more-btn">LOAD MORE LISTINGS</button>
+                </div>
+           </div>
+       </section>
+   </div>
+    <script src="main.js"></script>
+</body>
+</html>

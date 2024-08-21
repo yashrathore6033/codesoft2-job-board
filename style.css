@@ -1,0 +1,370 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.container{
+    width:100%;
+    margin: auto;
+}
+.top-btn{ 
+    margin-top: 10px;
+    height:100px;
+}
+.lists{ 
+    float: right;
+    margin-right: 140px;
+}
+.lists ul li{
+    display: inline-block;
+}
+.lists ul li i{
+    color:rgb(177, 177, 177);
+    width:30px;
+}
+.lists ul li button,.load-more-btn{
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    height:30px;
+    width:100px;
+    padding:3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.lists .register{
+    color:white;
+    background-color: rgb(29, 106, 248);
+}
+ .lists .login,.load-more-btn{
+    color:white;
+    background-color: rgb(0, 202, 78);
+}
+.lists .register:hover{
+    background-color: rgb(15, 143, 228);
+}
+.lists .login:hover,.load-more-btn:hover{
+    background-color: rgb(16, 182, 52);
+}
+.left-para-content button,.right-para-content button,.search-btn{
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    height:35px;
+    width:110px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.find-job{
+    float: right;
+    background-color: yellow;
+    color:black;
+}
+.post-job{
+    color:black;
+    background-color: white;
+    float: left;
+}
+.find-job:hover{
+    background-color: rgb(233, 233, 0);
+    color:black;
+}
+.post-job:hover{
+    color:black;
+    background-color: rgb(233, 233, 233);
+}
+.navigation{ 
+    margin-top: -35px;
+    display: flex;
+    flex-direction: row;
+}
+.left-head{
+    min-width:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left-head h2{
+    margin-top: -4px;
+    color:rgb(53, 53, 53);
+    font-weight: bolder;
+    font-size: 23px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.right-nav{ 
+    width: 100%;
+}
+.right-nav nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.right-nav nav ul li{
+    list-style-type: none;
+}
+.right-nav nav ul li a{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    font-weight: bolder;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT',sans-serif;
+    cursor: pointer;
+}
+.right-nav nav ul li a:hover{
+    color: black;
+}
+.banner-content{
+    height:300px;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left-img-content{
+    background: url("./images/img2.jpg");
+    background-size: cover;
+    max-width:100%;
+}
+.right-img-content{
+    background: url("./images/img16.jpg");
+    background-size: cover;
+    max-width:100%;
+}
+.left-para-content,.right-para-content{
+    height:180px;
+    width:85%;
+    padding:30px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    position: relative;
+    top:120px;
+    background-color: rgba(18, 230, 230, 0.671);
+    overflow:hidden ;
+}
+.left-para-content h3,.right-para-content h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',sans-serif;
+    margin-bottom:15px;
+}
+.left-para-content{
+    float:right;
+    direction: rtl;
+}
+.right-para-content{
+    direction: ltr;
+}
+.left-para-content p,.right-para-content p{
+    max-width:500px;
+    width:100%;
+    margin-bottom:10px;
+    font-family:'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+.find-job-section{
+    padding:20px 7.5%;
+    height:100%;
+}
+.find-job-section h3{
+    padding: 15px 0px;
+    font-weight: bolder;
+    color:rgb(56, 56, 56);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+}
+form{
+    direction: ltr;
+}
+.search-location-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.search-btn{
+    height:33px;
+    font-weight: bolder;
+    font-family:'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(3, 168, 72);
+    color: white;
+}
+.search-btn:hover{
+    background-color: rgba(3, 168, 72, 0.932);
+}
+.form-align input{
+    width:100%;
+    height: 36px;
+    border: transparent;
+    outline:none;
+}
+.form-align label{
+    font-size: 19px;
+    color: rgb(70, 70, 70);
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+.form-align input[type="text"]{
+    padding-left: 15px;
+    background-color: white;
+    font-weight: bolder;
+    border-radius: 4px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 0px 2px 4px rgb(224, 224, 224);
+}
+.form-align input[type="text"]:focus{
+    box-shadow: 0 0px 3px 1px rgb(139, 189, 255);
+}
+.form-align input::placeholder{
+    color: rgb(122, 122, 122);
+}
+.search-section i,.location-section i{
+    position: relative;
+    top:-25px;
+    right:-92%;
+    color:rgb(27, 133, 255);
+    font-size:18px;
+}
+.post-job-section{
+    display: none;
+    background-color: white;
+    padding-top:20px;
+}
+.post-job-section h1{
+    font-size: 26px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.post-job-section h1::before{
+    content:'';
+    position: relative;
+    top:31px;
+    margin:0 auto;
+    display: block;
+    background-color: rgba(0, 255, 221, 0.26);
+    height:15px;
+    width:260px;
+    border-radius: 3px;
+}
+.post-job-section p{
+    margin-top: 5px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 19px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(65, 65, 65);
+    margin-bottom:30px;
+}
+.posting-contents{
+    width:80%;
+    height:100%;
+    margin:auto auto 30px auto;
+    background-color: rgb(241, 236, 236);
+    box-shadow: 0 1px 20px 1px rgb(138, 138, 138);
+}
+.posting-contents h2.top-jobs{
+    padding-top:5px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.job-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-flow:row;
+    grid-gap:30px;
+    padding:0px 40px 0 40px;
+}
+.job{
+    height:100%;
+    border-radius: 5px;
+    padding-bottom:13px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    background-color: white;
+}
+.img-job img{
+    padding:10px;
+    height:80px;
+    width:80px;
+    margin-top: 20px;
+}
+.job h2{
+    padding:25px 0px 10px 0px;
+    font-size:16px;
+    font-weight: bolder;
+    font-family:Helvetica, sans-serif;
+}
+.job h5{
+    color:rgb(158, 158, 158);
+    font-size: 13px;
+    margin-bottom:20px;
+    font-weight: bolder;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.job h4 span.doll{
+    font-size: 22px;
+    color:rgb(0, 185, 77);
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+.job h4{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.job h3 i{
+    color:rgb(14, 214, 64);
+    font-size: 20px;
+}
+.job h3{
+    padding:10px 0px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+.job button{
+    height:30px;
+    padding: 6px;
+    font-size: 13px;
+    color:rgb(2, 221, 93);
+    border: 1px solid rgb(3, 241, 103);
+    outline: none;
+    background: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.job button:hover{
+    color:rgba(11, 243, 88, 0.753);
+}
+.load-btn-align{
+    margin-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.load-more-btn{
+    width:190px;
+    display: inline-block;
+}
+.load-more-btn::before{
+    content: '';
+    display: inline-block;
+    height:10px;
+    width:10px;
+    margin-right:6px;
+    border-radius: 50%;
+    background-color: azure;
+}
+.job-details{
+    overflow: hidden;
+}
+.job-details img{
+    position: relative;
+    right:-50px;
+    width:170px;
+    height: 60px;
+    float:right;
+    transform: rotate(40deg);
+}
